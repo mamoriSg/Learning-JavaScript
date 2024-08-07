@@ -1,11 +1,31 @@
-var num = 5;
-var some_new = 'Result: ';
+// var number = 15;
+// var isHasCar = true;
 
-console.log(some_new + num + "!");
+// if (number > 15 || isHasCar) {
+//     console.log("Yes");
+//     console.log("Yes. his car");
+// }
+// else if (number == 15) {
+//     console.log("num is 15");
+// }
 
-const number = 10;
-//number = 5;
-console.log(number);
+// else {
+//     console.log("Else")
+// }
 
-var isHisCar = true;
-var isJohnHasCar = false;
+var word = "3";
+
+switch (word) {
+    case "new":
+        console.log("var is new");
+        break;
+    case 5:
+        console.log("var is 5");
+        break;
+    case "some":
+        console.log("var is some");
+        break;
+    default:
+        console.log("vai is unknown");
+        break;
+}
