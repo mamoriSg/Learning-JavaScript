@@ -1,11 +1,6 @@
-var data = [4, 5, 2, 52, "Word", true];
-data[0] = false;
-console.log(data.length);
+var nums = [5, 4, 6, 2, 2, 5, 2];
 
-var matrix = [[5, 6],
-    ["World", false],
-    [true, 5.9, 0]
-];
-
-matrix[0][0] = 60;
-console.log(matrix[2][1]);
+for (var i = 0; i < nums.length; i++){
+    nums[i] *= 2;
+    console.log("element is : " + nums[i]);
+}
