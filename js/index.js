@@ -1,6 +1,14 @@
-var nums = [5, 4, 6, 2, 2, 5, 2];
+var user = prompt("Як ваші справи?", "okay");
+if (user == null)
+    alert("Ви нічого не ввели");
+else
+    console.log(user);
 
-for (var i = 0; i < nums.length; i++){
-    nums[i] *= 2;
-    console.log("element is : " + nums[i]);
-}
+
+// alert("Привіт, як  в тебе справи?");
+// var data = confirm("Чи все вам подобається? ");
+// if (data)
+//     alert("Привіт, як в тебе справи?");
+// else
+//     console.log("error")
+
