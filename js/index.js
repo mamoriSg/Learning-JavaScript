@@ -1,14 +1,18 @@
-var user = prompt("Як ваші справи?", "okay");
-if (user == null)
-    alert("Ви нічого не ввели");
-else
-    console.log(user);
+var some = 5;
 
+function arrSum(arr) {
+    var sum = 0;
+    for (var i = 0; i < arr.length; i++)
+        sum += arr[i];
 
-// alert("Привіт, як  в тебе справи?");
-// var data = confirm("Чи все вам подобається? ");
-// if (data)
-//     alert("Привіт, як в тебе справи?");
-// else
-//     console.log("error")
+    console.log(some);
+    return sum;
+}
+var arr1 = [5, 3, 2, 2];
+var res1 = arrSum(arr1); 
 
+var arr2 = [5, 3, 2, 2, 10];
+var res2 = arrSum(arr2);
+
+if (res1 > res2) console.log(res1);
+else console.log(res2);
