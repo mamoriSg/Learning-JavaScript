@@ -1,21 +1,25 @@
-function btnClick() {
-    console.log("message");
-}
+function checkForm() {
+    var username = el.username.value;
+    var email = el.email.value;
+    var pass = el.password.value;
+    var gender = el.gender.value;
 
-var counter = 0; 
-function btnOnceClick(el) {
-    counter++;
-    el.innerHTMl = "count: " + counter;
-    // el.name = "new value"
-    // alert(el.name); 
-}
+    var error = '';
+    if (username.length < 2)
+        error = "Ім'я занадто мале";
+    else if (email.length < 2)
+        error = "Email занадто малий";
+    else if (!email.includes("@"))
+        error = "Email не має @";
+    else if (pass.length < 2)
+        error = "Pass занадто малий";
+    else if (gender == null || gender == '')
+        error = "Gender error ";
 
-function userInput(el) {
-    if (el.value == "font");
-    el.style.fontSize = "20px"; 
+    if (error != "") {
+        document.getElementById("error").innerText = error;
+        return false;
+    }
     
-    else if (el.value == "color")
-        el.style.color = "red";
-    else if (el.value == "color")
-        el.style.backgroundColor = "black";
-}
+    return false;
+}   
