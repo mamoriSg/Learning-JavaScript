@@ -1,20 +1,10 @@
-var id = setInterval(my_func, 1000);
-
-var counter = 0;
-function my_func() {
-    document.getElementById("timer").innerHTML = "Counter: " + counter;
-    counter++;
-}
-
-function stopInterval() {
-    // clearInterval(id);
-    clearTimeout(timerid);
-}
+var date = new Date();
+// date.setHours(23);
 
 setInterval(function () {
-    console.log('sec...');
-}, 2000);
+    var time = "Час : " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
 
-var timerid = setTimeout(function () {
-    alert("Message");
-}, 5000);
+    document.getElementById('time').innerHTML = time;
+}, 1000);
+
+
